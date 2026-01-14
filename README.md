@@ -10,9 +10,9 @@ This case study evaluates your ability to:
 ---
 
 ## Dataset Overview
-You will use the **Netflix Movies and TV Shows** dataset provided in this repository.
+You will use the Netflix Movies and TV Shows dataset provided in this repository.
 
-Each row represents **one Netflix title** and includes
+Each row represents one Netflix title and includes
 - Content type (Movie or TV Show)
 - Release year
 - Date added to Netflix
@@ -38,9 +38,9 @@ You are an analyst asked to help leadership better understand this dataset
 Using the dataset:
 
 1. Create a Tableau dashboard that highlights important trends and patterns.
-2. Identify **3–5 key insights** that would be meaningful to senior executives.
-3. Provide **diagnostic commentary** explaining *why* these patterns may exist.
-4. Based on your findings, propose **1–2 strategic recommendations** related to:
+2. Identify 3–5 key insights that would be meaningful to senior executives.
+3. Provide diagnostic commentary explaining *why* these patterns may exist.
+4. Based on your findings, propose 1–2 strategic recommendations related to:
    - Content mix and balance
    - Genre or format concentration
    - Geographic representation
@@ -59,9 +59,9 @@ There is no single correct answer. Focus on clarity, reasoning, and communicatio
 
 ### 2. Written Summary (1–2 pages)
 Include:
-- **3–5 executive-level insights**
+- 3–5 executive-level insights
 - Brief diagnostic explanation for each insight
-- **1–2 strategic recommendations**
+- 1–2 strategic recommendations
 - Key assumptions and data limitations
 
 ---
