@@ -5,15 +5,14 @@ This case study evaluates your ability to:
 - Explore an unfamiliar dataset independently
 - Identify meaningful patterns and trends
 - Create clear, aesthetically pleasing visualizations
-- Communicate insights to a senior executive audience
-- Translate analysis into directional strategic recommendations
+- Communicate insights to stakeholders
 
 ---
 
 ## Dataset Overview
 You will use the **Netflix Movies and TV Shows** dataset provided in this repository.
 
-Each row represents **one Netflix title** (movie or TV show) and includes metadata such as:
+Each row represents **one Netflix title** and includes
 - Content type (Movie or TV Show)
 - Release year
 - Date added to Netflix
@@ -22,7 +21,6 @@ Each row represents **one Netflix title** (movie or TV show) and includes metada
 - Content rating
 - Duration
 
-> **Note:** This dataset contains catalog metadata only. It does **not** include viewership, revenue, or engagement metrics. Recommendations should be framed accordingly.
 
 ---
 
@@ -35,11 +33,11 @@ You may use other tools (SQL, Python, Excel) for data preparation, but all final
 ---
 
 ## Case Study Prompt
-You are an analyst asked to help Netflix leadership better understand the **composition and evolution of the content catalog**.
+You are an analyst asked to help leadership better understand this dataset
 
 Using the dataset:
 
-1. Create a Tableau dashboard or story that highlights the most important trends and patterns.
+1. Create a Tableau dashboard that highlights important trends and patterns.
 2. Identify **3–5 key insights** that would be meaningful to senior executives.
 3. Provide **diagnostic commentary** explaining *why* these patterns may exist.
 4. Based on your findings, propose **1–2 strategic recommendations** related to:
@@ -54,8 +52,7 @@ There is no single correct answer. Focus on clarity, reasoning, and communicatio
 
 ## Deliverables
 
-### 1. Tableau Public Workbook
-- One or more dashboards or a Tableau Story
+### 1. Tableau Public Workbook 
 - Clear visual hierarchy and layout
 - Appropriate chart selection
 - Thoughtful use of color, labels, and annotations
@@ -69,29 +66,6 @@ Include:
 
 ---
 
-## Guidance on Insights
-Strong insights typically:
-- Go beyond simple counts or rankings
-- Combine multiple dimensions (time, geography, genre, format)
-- Highlight trends, shifts, or concentration
-- Clearly answer *“So what?”* for leadership
-
-Examples (illustrative only):
-- Shifts in the mix of movies vs TV shows over time
-- Concentration of content by country or region
-- Genre saturation or gaps in the catalog
-- Changes in content age relative to catalog growth
-
----
-
-## Strategic Recommendations
-Recommendations should:
-- Be grounded in observed patterns
-- Be realistic and clearly articulated
-- Acknowledge data limitations
-- Focus on **direction**, not execution detail
-
----
 
 ## Evaluation Criteria
 You will be evaluated on:
@@ -102,10 +76,8 @@ You will be evaluated on:
 - Quality of recommendations
 - Transparency around assumptions and limitations
 
----
 
-## Notes
-- The dataset includes known limitations (missing values, multi-valued fields).
-- How you handle or acknowledge these limitations is part of the evaluation.
-- Perfection is not expected — thoughtfulness and clarity are.
+
+
+- Perfection is not expected — thoughtfulness and clarity are. And have fun with it--data is fun
 
