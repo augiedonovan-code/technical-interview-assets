@@ -56,8 +56,9 @@ There is no single correct answer. Focus on clarity, reasoning, and communicatio
 - Clear visual hierarchy and layout
 - Appropriate chart selection
 - Thoughtful use of color, labels, and annotations
+- Primarily static design; advanced interactivity (action filters, parameters ect) is not required and should be used only if necessary to support presentation flow
 
-### 2. Written Summary (1–2 pages)
+### 2. Presenation (5-10 minutes)
 Include:
 - 3–5 executive-level insights
 - Brief diagnostic explanation for each insight
