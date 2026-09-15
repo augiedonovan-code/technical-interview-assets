@@ -53,23 +53,6 @@ You do **not** need to run anything to do this exercise.
 
 ---
 
-## Optional: running it yourself
-
-Entirely optional — some people like to poke at the data. The notebook is executed top-to-bottom
-already, so everything you need to read is in the rendered output.
-
-If you do want to run it, you'll need Python 3.9+ and:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-jupyter notebook churn_model_review.ipynb
-```
-
-Run it from the repo root so the notebook can find the CSV next to it. It's seeded, so re-running
-reproduces the same numbers.
-
----
-
 ## Ground rules
 
 - **You don't need to fix anything.** Identifying and explaining an issue is the whole task. If you
