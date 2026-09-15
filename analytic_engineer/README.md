@@ -1,40 +1,94 @@
-# Risk Flagging Pipeline — Consultation Exercise
+# Model Review Exercise — Customer Churn
 
-## The Situation
+Thanks for making the time for this. This exercise is a **code and model review**, not a coding
+test. There is nothing to submit beforehand and **you will not be asked to write any code.**
 
-A financial services analytics team built this pipeline to automate their daily client reporting. It's been running in production for a few months. The team is growing and leadership wants an outside perspective before they scale it further.
-
-You've been brought in as a **data consultant**. Your job is to read through the codebase and give the team your honest read — where is this process fragile, what keeps you up at night, and what would you want to address before this gets harder to change.
-
----
-
-## What the Pipeline Does
-
-Every morning, an automated job:
-
-1. Queries the transactions database for recent activity
-2. Aggregates transaction totals per user, across five clients
-3. Identifies users who exceeded each client's review threshold
-4. Emails each client a CSV of their flagged users for the day
-5. Sends an internal summary to the analytics team
+**What to do before we meet:** read through `churn_model_review.html` (about 5–10 minutes) and come
+ready to talk about it. If you'd rather read it live with us, that's completely fine too — just let
+us know.
 
 ---
 
-## Your Task
+## The scenario
 
-Read through the code and walk us through your thinking out loud.
+You've just joined the team as a senior ML engineer.
 
-There's no written deliverable. We want to hear how you reason about a system you didn't build — what you notice, what questions it raises, and how you'd advise the team on where to focus.
+A junior data scientist on Growth Analytics has built a customer-churn model. The Retention team
+wants to use it to decide which subscribers get a "save offer" before they cancel; today that
+targeting is done by hand off a spreadsheet. The junior has finished their first pass, written it
+up in the notebook in this repo, and is asking to ship it to production.
+
+Your tech lead has asked you to review the work before that happens.
+
+The notebook is genuine, good-faith work by someone early in their career who is trying hard to do
+a good job. Treat it that way.
 
 ---
 
-## Files
+## What we'll talk about
 
-| File | Description |
+The conversation is roughly 45 minutes and unstructured. We'll mostly be asking:
+
+- **Walk us through what they did.** What's the overall approach?
+- **Do you believe the headline numbers?** Why or why not?
+- **Would you approve the deployment recommendation as written?** If not, what would need to change
+  first?
+- **What's the single most important thing you'd want fixed**, and how would you explain it to the
+  person who wrote this?
+
+We care much more about the depth of a few well-reasoned points than a long list of everything you
+noticed. If you find yourself with a lot to say, lead with what matters most.
+
+---
+
+## What's in this repo
+
+| File | What it is |
 |---|---|
-| `pipeline.py` | Main daily job |
-| `summary_report.py` | Internal summary email |
-| `data_utils.py` | Utility functions |
-| `client_config.py` | Client configuration |
+| `churn_model_review.html` | **Start here.** The notebook, fully rendered with all outputs and plots. Opens in any browser — nothing to install. |
+| `churn_model_review.ipynb` | The same notebook, if you'd rather read it in Jupyter/VS Code. Already executed, so all outputs are visible without running anything. |
+| `subscriber_churn_snapshot.csv` | The dataset the notebook uses. 8,000 rows, one per subscriber. Only needed if you want to re-run things yourself. |
 
-**Time:** ~30 minutes. You won't cover everything — that's expected. We're more interested in how you prioritize than how exhaustive you are.
+You do **not** need to run anything to do this exercise.
+
+---
+
+## Optional: running it yourself
+
+Entirely optional — some people like to poke at the data. The notebook is executed top-to-bottom
+already, so everything you need to read is in the rendered output.
+
+If you do want to run it, you'll need Python 3.9+ and:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+jupyter notebook churn_model_review.ipynb
+```
+
+Run it from the repo root so the notebook can find the CSV next to it. It's seeded, so re-running
+reproduces the same numbers.
+
+---
+
+## Ground rules
+
+- **You don't need to fix anything.** Identifying and explaining an issue is the whole task. If you
+  want to sketch what you'd do differently, describe it — no need to write working code.
+- **Think out loud.** We're interested in how you reason about someone else's work, so a wrong turn
+  you talk through is more useful to us than silence.
+- **"I'd want to check X before I trusted this" is a great answer.** Knowing what you'd verify is
+  part of the skill.
+- **No trivia.** We won't ask you to recall API signatures or library minutiae, and you're welcome
+  to look things up during the conversation.
+- **Ask us questions.** If something about the business context or the data is unclear, ask — we'll
+  answer in character as the team that owns this.
+
+---
+
+## What we're looking for
+
+- Can you read an unfamiliar ML notebook and form a view on whether its results can be trusted?
+- Can you separate what's cosmetic from what would actually hurt in production?
+- Can you give direct, useful feedback to a more junior colleague without being discouraging?
+
+Looking forward to the discussion.
